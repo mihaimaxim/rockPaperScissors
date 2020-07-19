@@ -70,4 +70,5 @@ startGameBtn.addEventListener("click", () => {
    console.log(
       `Player: ${playerSelection} - CPU: ${computerSeelction}, thus ${result}`
    );
+   gameIsRunning = false;
 });
