@@ -15,15 +15,18 @@ const getPlayerChoice = () => {
       `${ROCK}, ${PAPER} or ${SCISSORS}?`,
       ""
    ).toUpperCase();
+
    if (selection !== ROCK && selection !== PAPER && selection !== SCISSORS) {
       alert(`Wrong answer, we chose ${DEFAULT_USER_CHOICE} for you!`);
       return DEFAULT_USER_CHOICE;
    }
+
    return selection;
 };
 
 const getComputerChoice = () => {
    const computerChoice = Math.random();
+
    if (computerChoice < 0.34) {
       return ROCK;
    } else if (computerChoice < 0.67) {
