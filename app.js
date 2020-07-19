@@ -60,6 +60,7 @@ const matchResult = (playerChoice, computerChoice) => {
 };
 
 startGameBtn.addEventListener("click", () => {
+   console.clear();
    if (gameIsRunning) {
       return;
    }
